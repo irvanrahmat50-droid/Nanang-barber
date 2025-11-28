@@ -1,0 +1,204 @@
+/* =======================
+   RESET
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0f2c; /* biru gelap neon */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* =======================
+   ANIMASI BARBER POLE
+======================= */
+@keyframes barberPole {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.barber-border {
+    border: 6px solid transparent;
+    border-image: repeating-linear-gradient(
+        45deg,
+        red 0 10px,
+        white 10px 20px,
+        #007bff 20px 30px,
+        white 30px 40px
+    ) 6;
+    animation: barberPole 3s linear infinite;
+}
+
+/* =======================
+   GLOW ANIMATION
+======================= */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0040; }
+    50% { text-shadow: 0 0 20px #007bff, 0 0 35px #00aaff; }
+    100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0040; }
+}
+
+/* =======================
+   HEADER NEON
+======================= */
+header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: #0d133a;
+    border-bottom: 8px solid #ff0040;
+    box-shadow: 0 0 20px #ff0040;
+}
+
+header h1 {
+    font-family: Impact, sans-serif;
+    font-size: 45px;
+    letter-spacing: 3px;
+    animation: glow 2s infinite;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* =======================
+   HERO
+======================= */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-img {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #007bff;
+    border: 4px solid #fff;
+}
+
+.hero h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #00aaff;
+    text-shadow: 0 0 10px #007bff;
+}
+
+/* =======================
+   PRICE LIST
+======================= */
+.price-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.price-list h2 {
+    font-size: 28px;
+    font-family: Impact;
+    margin-bottom: 15px;
+    color: #ff0040;
+    text-shadow: 0 0 10px #ff0040;
+}
+
+.price-card {
+    background: rgba(15, 20, 50, 0.8);
+    padding: 20px;
+    margin: 15px auto;
+    width: 85%;
+    border-radius: 12px;
+    color: white;
+    border: 4px solid #007bff;
+    box-shadow: 0 0 20px #007bff;
+}
+
+.price-card h3 {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 26px;
+    color: #ff0040;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff0040;
+}
+
+/* =======================
+   GALLERY
+======================= */
+.gallery {
+    padding: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: Impact;
+    margin-bottom: 15px;
+    color: #00aaff;
+    text-shadow: 0 0 12px #00aaff;
+}
+
+.photo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photo img {
+    width: 85%;
+    border-radius: 8px;
+    border: 4px solid white;
+    box-shadow: 0 0 20px #ff0040;
+}
+
+/* =======================
+   CONTACT / WA BUTTON
+======================= */
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.wa-btn {
+    display: inline-block;
+    background: #25d366;
+    padding: 14px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 18px #00ff7b;
+}
+
+.alamat {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background: #0d133a;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-top: 6px solid #007bff;
+    box-shadow: 0 0 20px #007bff;
+}
+
+/* =======================
+   BARBER POLE FRAME
+======================= */
+.frame {
+    padding: 10px;
+    border-radius: 12px;
+    margin: 20px auto;
+}
